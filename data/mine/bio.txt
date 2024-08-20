@@ -1,0 +1,2 @@
+I'm a third year PhD student (TCS Research Fellow) at Yardi School of AI@IIT-Delhi, where I'm working on object-centric generation and editing of images using Diffusion Models, advised by Prof. Parag Singla.
+I completed my Bachelors in Electronics and Communication Engineering from IIIT-Guwahati, during which I did a few internships centered around Large Scale ML and generative models at Delhivery and Spyne.ai

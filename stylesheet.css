@@ -79,7 +79,13 @@ td,
 th,
 tr,
 p,
-a {
+a
+{
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.author {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -90,6 +96,7 @@ strong {
 }
 
 h2 {
+  text-decoration: underline;
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
@@ -98,7 +105,7 @@ h2 {
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -110,13 +117,13 @@ h2 {
 }
 
 .one {
-  width: 160px;
+  /* width: 160px; */
   height: 160px;
   position: relative;
 }
 
 .two {
-  width: 160px;
+  /* width: 160px; */
   height: 160px;
   position: absolute;
   transition: opacity .2s ease-in-out;
