@@ -2,14 +2,42 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <title>Ashish Goswami</title>
-
     <meta name="author" content="Jon Barron">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon_io/Remove background project.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+    <style>
+      .conference-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 0.9em;
+        letter-spacing: 0.5px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      
+      .conference-badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      
+      .conf-emnlp {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+      
+      .conf-arxiv {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+      }
+      
+      .conf-preprint {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
@@ -22,7 +50,7 @@
                 <p class="name" style="text-align: center;">
                   Ashish Goswami
                 </p>
-                <p>I'm a third year PhD student (<a href="https://www.tcs.com/" target="_blank">TCS</a> Research Fellow) at <a href="https://scai.iitd.ac.in/" target="_blank">Yardi School of AI@IIT-Delhi</a>, where I'm working on object-centric generation and editing of images using Diffusion Models, advised by <a href="https://www.cse.iitd.ac.in/~parags/" target="_blank"> Prof. Parag Singla</a>
+                <p>I'm a fourth year PhD student (<a href="https://www.tcs.com/" target="_blank">TCS</a> Research Fellow) at <a href="https://scai.iitd.ac.in/" target="_blank">Yardi School of AI@IIT-Delhi</a>, where I'm working on object-centric generation and editing of images using Diffusion Models, advised by <a href="https://www.cse.iitd.ac.in/~parags/" target="_blank"> Prof. Parag Singla</a>
                 </p>
                 <p>
                   I completed my Bachelors in Electronics and Communication Engineering from <a href="https://www.iiitg.ac.in/" target="_blank">IIIT-Guwahati</a>, during which I did a few internships centered around Large Scale ML and generative models at <a href="https://www.delhivery.com/services/data-intelligence" target="_blank">Delhivery</a> and <a href="https://www.spyne.ai/" target="_blank">Spyne.ai</a>
@@ -47,16 +75,12 @@
                 <h2>Research</h2>
                 <p>
                   I'm broadly interested in building reasoning capabilities in multi-modal generative models like Text-to-image diffusion and Text driven image-editing models. Recent work on object centric representation learning has some pretty neat ideas which I'd like explore.
-                  <!-- I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>. -->
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-
-
-    <!-- NORMAL VIDEO BASED ADDITION -->
     <tr height=300px>
       <td style="padding:20px;width:30%;vertical-align:middle">
         <div class="one" onmouseout="neurosim_stop()" onmouseover="neurosim_start()">
@@ -94,7 +118,7 @@
         <a href="" class="author">Dinesh Garg</a>,
         <br>
         <br>
-        <em>EMNLP</em>, 2023
+        <span class="conference-badge conf-emnlp">EMNLP 2023</span> 
         <br>
         <a href="https://aclanthology.org/2023.emnlp-main.181.mp4" target="_blank">video</a>
         /
@@ -105,9 +129,6 @@
         </p>
       </td>
     </tr>
-
-
-
 
     <tr height=300px>
       <td style="padding:20px;width:30%;vertical-align:middle">
@@ -126,16 +147,13 @@
         <a href="https://www.cse.iitd.ac.in/~parags/index.html" class="author">Parag Singla</a>,
         <br>
         <br>
-        <em>Arxiv Preprint</em>, 2024
+        <span class="conference-badge conf-arxiv">Arxiv Preprint 2024</span> & <span class="conference-badge conf-preprint">MMFM Workshop @ CVPR'25</span>
         <br>
         <a href="https://dair-iitd.github.io/GraPE/">Project Page</a>
         /
         <a href="https://arxiv.org/abs/2412.06089">arXiv</a>
         /
         <a href="https://github.com/dair-iitd/GraPE">Code</a>
-        <!-- <a href="https://aclanthology.org/2023.emnlp-main.181.mp4" target="_blank">video</a>
-        /
-        <a href="https://arxiv.org/abs/2305.14410" target="_blank">arXiv</a> -->
         <p></p>
         <p>
           An unifying and generic framework for improving semantic alignemt of T2I models
@@ -144,111 +162,7 @@
       </td>
     </tr>
 
-
-
-
-
-    <!-- HIGHLIGHTED VIDEO BASED ADDITION -->
-    <!-- <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
-</span>
-        </a>
-        <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>,
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p>
-        <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
-        </p>
-      </td>
-    </tr> -->
-
-
-    <!-- <tr onmouseout="paper_stop()" onmouseover="paper_stop()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='paper_image'><video  width=100% muted autoplay loop>
-          <source src="images/bog.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/bog.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function paper_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function paper_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://creiser.github.io/binary_opacity_grid/">
-          <span class="papertitle">Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis
-</span>
-        </a>
-        <br>
-				<a href="https://creiser.github.io/">Christian Reiser</a>,
-				<a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
-				<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-				<a href="https://dorverbin.github.io/">Dor Verbin</a>,
-				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
-				<strong>Jonathan T. Barron</strong>,
-				<a href="https://phogzone.com/">Peter Hedman</a>*,
-				<a href="https://www.cvlibs.net/">Andreas Geiger</a>*
-        <br>
-        <em>SIGGRAPH</em>, 2024
-        <br>
-        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
-        /
-        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
-        <p></p>
-        <p>
-        Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
-        </p>
-      </td>
-    </tr> -->
           </tbody></table>
-
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tr>
@@ -304,62 +218,15 @@
                 AIL721: Deep Learning
               </td>
             </tr>
-          </table>
-
-          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
-                <h2>Miscellanea</h2>
+                Sem I - 2025-26
+              </td>
+              <td>
+                COL774: Machine Learning
               </td>
             </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/mine/logo.png" style="width: 100%;"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr> -->
-
+          </table>
 
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
