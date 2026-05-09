@@ -140,3 +140,91 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* News Section - minimalist style */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item:hover {
+  background-color: #f8f9fb;
+  transform: translateX(4px);
+}
+
+.news-date {
+  font-size: 13px;
+  font-weight: 600;
+  color: #667eea;
+  background: #f0f0ff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+  min-width: 80px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.news-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.news-text a {
+  font-size: inherit;
+}
+
+/* TA Duties - minimalist style */
+.ta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ta-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.ta-item:last-child {
+  border-bottom: none;
+}
+
+.ta-item:hover {
+  background-color: #f8f9fb;
+  transform: translateX(4px);
+}
+
+.ta-semester {
+  font-size: 14px;
+  color: #888;
+  min-width: 150px;
+  letter-spacing: 0.3px;
+}
+
+.ta-course {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+  flex: 1;
+}
